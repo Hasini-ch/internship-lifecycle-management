@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="08756bf483f18f5488bbf2a6feaad3a3" label="Certificate" max_length="40" name="x_2059455_intern_0_certificates" type="collection">
+        <element label="Issue Date" max_length="40" name="issue_date" type="glide_date"/>
+        <element label="Student Name" max_length="40" name="student_name" type="string"/>
+        <element choice="1" label="Certificate Status" max_length="40" name="certificate_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Generated" sequence="0" value="generated"/>
+                <element inactive_on_update="false" label="sent" sequence="1" value="sent"/>
+            </choice>
+        </element>
+        <element label="Application" max_length="32" name="application" reference="x_2059455_intern_0_internship_application" type="reference"/>
+        <element label="Certificate Number" max_length="40" name="certificate_number" type="string"/>
+        <index name="index">
+            <element name="application"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="dd7504e083b98b5488bbf2a6feaad316" label="Company" max_length="40" name="x_2059455_intern_0_company" type="collection">
+        <element label="Company Email" max_length="40" name="company_email" type="string"/>
+        <element label="Website" max_length="1024" name="website" type="url"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element label="Company Name" max_length="40" name="company_name" type="string"/>
+        <element label="HR Name" max_length="40" name="hr_name" type="string"/>
+        <element choice="3" label="Industry" max_length="40" name="industry" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Core" sequence="1" value="core"/>
+                <element inactive_on_update="false" label="Healthcare" sequence="3" value="healthcare"/>
+                <element inactive_on_update="false" label="IT" sequence="0" value="it"/>
+                <element inactive_on_update="false" label="Other" sequence="4" value="other"/>
+                <element inactive_on_update="false" label="Finance" sequence="2" value="finance"/>
+            </choice>
+        </element>
+        <element label="Company Contact" max_length="40" name="company_contact" type="string"/>
+        <element choice="3" label="Internship Domain" max_length="40" name="internship_domain" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Testing" sequence="1" value="testing"/>
+                <element inactive_on_update="false" label="Mechanical" sequence="4" value="mechanical"/>
+                <element inactive_on_update="false" label="Data Science" sequence="2" value="data_science"/>
+                <element inactive_on_update="false" label="Development" sequence="0" value="development"/>
+                <element inactive_on_update="false" label="Cloud" sequence="3" value="cloud"/>
+            </choice>
+        </element>
+    </element>
+</database>

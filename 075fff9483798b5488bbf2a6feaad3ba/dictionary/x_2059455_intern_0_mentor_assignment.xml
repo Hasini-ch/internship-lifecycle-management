@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b8abb30683710b9488bbf2a6feaad3a1" label="Mentor Assignment" max_length="40" name="x_2059455_intern_0_mentor_assignment" type="collection">
+        <element label="Application" max_length="32" name="application" reference="x_2059455_intern_0_internship_application" type="reference"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Assigned" sequence="0" value="assigned"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+            </choice>
+        </element>
+        <element label="Mentor Email" max_length="40" name="mentor_email" type="string"/>
+        <element label="Assigned Date" max_length="40" name="assigned_date" type="glide_date"/>
+        <element label="Student Name" max_length="40" name="student_name" type="string"/>
+        <element label="Mentor" max_length="32" name="mentor" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="application"/>
+        </index>
+        <index name="index2">
+            <element name="mentor"/>
+        </index>
+    </element>
+</database>

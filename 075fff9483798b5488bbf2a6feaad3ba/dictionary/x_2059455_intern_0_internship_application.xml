@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ef2edae4833dcb5488bbf2a6feaad37c" label="Internship Application" max_length="40" name="x_2059455_intern_0_internship_application" type="collection">
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element choice="1" label="Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="MECH" sequence="7" value="mech"/>
+                <element inactive_on_update="false" label="CSE" sequence="0" value="cse"/>
+                <element inactive_on_update="false" label="IT" sequence="5" value="it"/>
+                <element inactive_on_update="false" label="AIML" sequence="3" value="aiml"/>
+                <element inactive_on_update="false" label="DS" sequence="1" value="ds"/>
+                <element inactive_on_update="false" label="AI" sequence="2" value="ai"/>
+                <element inactive_on_update="false" label="CIVIL" sequence="8" value="civil"/>
+                <element inactive_on_update="false" label="ECE" sequence="6" value="ece"/>
+                <element inactive_on_update="false" label="CS" sequence="4" value="cs"/>
+            </choice>
+        </element>
+        <element label="Student Name" max_length="40" name="student_name" type="string"/>
+        <element label="Student ID" max_length="40" name="student_id" type="string"/>
+        <element choice="3" label="Internship Domain" max_length="40" name="internship_domain" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Civil Engineering" sequence="7" value="civil_engineering"/>
+                <element inactive_on_update="false" label="Software Development" sequence="0" value="software_development"/>
+                <element inactive_on_update="false" label="Mechanical Design" sequence="5" value="mechanical_design"/>
+                <element inactive_on_update="false" label="Cloud Computing" sequence="3" value="cloud_computing"/>
+                <element inactive_on_update="false" label="Data Science" sequence="1" value="data_science"/>
+                <element inactive_on_update="false" label="DevOps" sequence="9" value="devops"/>
+                <element inactive_on_update="false" label="Artificial Intelligence" sequence="2" value="artificial_intelligence"/>
+                <element inactive_on_update="false" label="Web Development" sequence="8" value="web_development"/>
+                <element inactive_on_update="false" label="Electronics &amp; Embedded Systems" sequence="6" value="electronics_embedded_systems"/>
+                <element inactive_on_update="false" label="Cyber Security" sequence="4" value="cyber_security"/>
+            </choice>
+        </element>
+        <element label="Student Email" max_length="40" name="student_email" type="string"/>
+        <element label="Company" max_length="32" name="company" reference="x_2059455_intern_0_company" type="reference"/>
+        <element label="Application Number" max_length="40" name="application_number" type="string"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Under Review" sequence="6" value="under_review"/>
+                <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
+                <element inactive_on_update="false" label="Completed" sequence="4" value="completed"/>
+                <element inactive_on_update="false" label="Company Approved" sequence="2" value="company_approved"/>
+                <element inactive_on_update="false" label="Faculty Approved" sequence="1" value="faculty_approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="7" value="rejected"/>
+                <element inactive_on_update="false" label="In Progress" sequence="5" value="in_progress"/>
+                <element inactive_on_update="false" label="Active" sequence="3" value="active"/>
+            </choice>
+        </element>
+        <element default="javascript: gs.getUserID();" label="Student" max_length="32" name="student" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="company"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

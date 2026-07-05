@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Internship Application Request">b68c28d283f50b9488bbf2a6feaad333</sc_cat_item>
+        <sc_category display_value="Internship Services">875ca0d283f50b9488bbf2a6feaad36f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-02 16:04:15</sys_created_on>
+        <sys_id>53cc601683f50b9488bbf2a6feaad321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Internship Services.Internship Application Request</sys_name>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name>sc_cat_item_category_53cc601683f50b9488bbf2a6feaad321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 16:04:15</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

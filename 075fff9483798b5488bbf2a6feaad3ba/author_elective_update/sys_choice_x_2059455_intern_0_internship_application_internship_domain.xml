@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="internship_domain" table="x_2059455_intern_0_internship_application" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>internship_domain</element>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>internship_domain</sys_name>
+            <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+            <sys_update_name>sys_choice_x_2059455_intern_0_internship_application_internship_domain</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Software Development</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>software_development</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Data Science</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>data_science</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Artificial Intelligence</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>artificial_intelligence</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cloud Computing</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>cloud_computing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cyber Security</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>cyber_security</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mechanical Design</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>mechanical_design</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Electronics &amp; Embedded Systems</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>electronics_embedded_systems</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Civil Engineering</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>civil_engineering</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Web Development</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>web_development</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>internship_domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DevOps</label>
+            <language>en</language>
+            <name>x_2059455_intern_0_internship_application</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-27 14:15:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-27 14:15:22</sys_updated_on>
+            <value>devops</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="37f0a7bc83b18f5488bbf2a6feaad3b0" label="Progress Report" max_length="40" name="x_2059455_intern_0_progress_report" type="collection">
+        <element label="Work Summary" max_length="40" name="work_summary" type="string"/>
+        <element label="Mentor Feedback" max_length="40" name="mentor_feedback" type="string"/>
+        <element label="Week Number" max_length="40" name="week_number" type="integer"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
+                <element inactive_on_update="false" label="Reviewed" sequence="1" value="reviewed"/>
+            </choice>
+        </element>
+        <element label="Student Name" max_length="40" name="student_name" type="string"/>
+        <element label="Application" max_length="32" name="application" reference="x_2059455_intern_0_internship_application" type="reference"/>
+        <index name="index">
+            <element name="application"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1712000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>faculty_approval_approved</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Faculty Approval Record","reference":"x_2059455_intern_0_faculty_approval","reference_display":"Faculty Approval","type":"reference","base_type":"reference","usedInstances":{"c3ce0478-e7d4-487b-b295-739126dbbeef":["record"],"bbdf26ba-30cd-47d8-9763-34523bc1fc79":["application","mentor","student_name"]},"attributes":{}},{"name":"Updated_1.current.application","label":"Trigger - Record Updated➛Faculty Approval Record➛Application","reference":"x_2059455_intern_0_internship_application","reference_display":"Internship Application","type":"reference","base_type":"reference","parent_table_name":"x_2059455_intern_0_faculty_approval","column_name":"application","usedInstances":{"c3ce0478-e7d4-487b-b295-739126dbbeef":["record"],"bbdf26ba-30cd-47d8-9763-34523bc1fc79":["application"]}},{"name":"Updated_1.current.faculty_name","label":"Trigger - Record Updated➛Faculty Approval Record➛Faculty Name","reference":"","reference_display":"Faculty Name","type":"string","base_type":"string","parent_table_name":"x_2059455_intern_0_faculty_approval","column_name":"faculty_name","usedInstances":{"bbdf26ba-30cd-47d8-9763-34523bc1fc79":["mentor"]}},{"name":"Updated_1.current.application.student","label":"Trigger - Record Updated➛Faculty Approval Record➛Application➛Student","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_2059455_intern_0_internship_application","column_name":"student","usedInstances":{"bbdf26ba-30cd-47d8-9763-34523bc1fc79":["student_name"]}}]</label_cache>
+        <master_snapshot>b3777afe83754f9488bbf2a6feaad310</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Faculty Approval Approved</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>44877afe83754f9488bbf2a6feaad363</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:58:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a9f0beb283754f9488bbf2a6feaad36d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Faculty Approval Approved</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name>sys_hub_flow_a9f0beb283754f9488bbf2a6feaad36d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:13</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>d4877afe83754f9488bbf2a6feaad3ae</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2059455_intern_0_faculty_approval">approval_status=approved<item display_value="Approved" endquery="false" field="approval_status" goto="false" newquery="false" operator="=" or="false" value="approved"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>44877afe83754f9488bbf2a6feaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:12</sys_updated_on>
+        <table>x_2059455_intern_0_faculty_approval</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>a9f0beb283754f9488bbf2a6feaad36d</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:12</sys_created_on>
+        <sys_id>cc877afe83754f9488bbf2a6feaad363</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:12</sys_updated_on>
+        <trigger display_value="">44877afe83754f9488bbf2a6feaad363</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a9f0beb283754f9488bbf2a6feaad36d^sys_idNOT INcc877afe83754f9488bbf2a6feaad363"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a9f0beb283754f9488bbf2a6feaad36d^sys_idNOT INe9f0beb283754f9488bbf2a6feaad36e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a9f0beb283754f9488bbf2a6feaad36d</id>
+        <name>Faculty Approval Approved</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:58:38</sys_created_on>
+        <sys_id>e9f0beb283754f9488bbf2a6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 14:58:38</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e9f0beb283754f9488bbf2a6feaad36e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a9f0beb283754f9488bbf2a6feaad36d^sys_idNOT IN3001f2f283754f9488bbf2a6feaad32c,8901f2f283754f9488bbf2a6feaad371,bc01f2f283754f9488bbf2a6feaad34e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Faculty Approval Approved">a9f0beb283754f9488bbf2a6feaad36d</model>
+        <model_id>a9f0beb283754f9488bbf2a6feaad36d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a9f0beb283754f9488bbf2a6feaad36d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:58:51</sys_created_on>
+        <sys_id>3001f2f283754f9488bbf2a6feaad32c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3001f2f283754f9488bbf2a6feaad32c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Faculty Approval Approved">a9f0beb283754f9488bbf2a6feaad36d</model>
+        <model_id>a9f0beb283754f9488bbf2a6feaad36d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a9f0beb283754f9488bbf2a6feaad36d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:58:51</sys_created_on>
+        <sys_id>8901f2f283754f9488bbf2a6feaad371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 14:58:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8901f2f283754f9488bbf2a6feaad371"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Faculty Approval Approved">a9f0beb283754f9488bbf2a6feaad36d</model>
+        <model_id>a9f0beb283754f9488bbf2a6feaad36d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a9f0beb283754f9488bbf2a6feaad36d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:58:51</sys_created_on>
+        <sys_id>bc01f2f283754f9488bbf2a6feaad34e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc01f2f283754f9488bbf2a6feaad34e"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=a9f0beb283754f9488bbf2a6feaad36d^sys_idNOT INe801f2f283754f9488bbf2a6feaad322"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Faculty Approval Approved">a9f0beb283754f9488bbf2a6feaad36d</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:58:50</sys_created_on>
+        <sys_id>e801f2f283754f9488bbf2a6feaad322</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:10</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=a9f0beb283754f9488bbf2a6feaad36d^sys_idNOT IN1cf2beb683754f9488bbf2a6feaad3c6,5b81363683754f9488bbf2a6feaad371"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Faculty Approval Approved">a9f0beb283754f9488bbf2a6feaad36d</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:07:16</sys_created_on>
+        <sys_id>1cf2beb683754f9488bbf2a6feaad3c6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:37:05</sys_updated_on>
+        <ui_id>bbdf26ba-30cd-47d8-9763-34523bc1fc79</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VVTW/bMAz9K4HOhmHHSdDmVrTIaW2BdculawVZohMBsuxJchovyH8fZSlp0DVYB+xS3/jxqPcoin7cESnInMxyyKaX+YwXeVGMs2x8McnLWVHmY1EwgAlJiGY1YKZjpQI6GAnZMNV555aOET6ZTqnUDoymGa1Bu8ZQZq1caW9gupC2VaxfRtTtkDK6Ok3ha6mEAU3mj08JaZnBg7Aime/ehD5KW7ESFKZ+87zPyHB9+67vyyl2dBcCjRGeT5YQ2DrQApBIxZSFhNRMC4aSejJ3pkOHASbuteqPGWvsDxYkPndr5S889iLzeRWgMg4hdjRp7FhwVzfMsQeszF1nYipfN5KDDT0RULFOuetTX0i4b51sdIAMMiO6UV2t70JLyLHA4YLQ01kkAa3X6ZlHGdXDunn5emC5kHpoSQyqhjN1tJhzRpad83x2BBT4i6Y1a1upV7Q1zUYOYORSpyuFRlqp5gUP9VORMu6Jp9hWli7QfzO4l8xIr+IWyyB4nxDb22uFw/aqBZtIf3aeSVAWNdDQBg/hRrbuCg/YQKS7Tw7vQUB2eXaw8vJ1kIYnYE/eAlJSkjNP+0eXZYXY7b63yB8EzVPeGWyZS0+S9vtn67qBmi/5IUwaEYgN7+w8qmIcb7Qfag9HMdfZkB7eJojnYP75QD+zlH9cJH+/78MiWUhQwr4zAIctAjX20AENA/Fmk8TgaBmDcZvk/2ub5LNs+D7RTgniPv1KOfl7nFkuT78B13iRkm4HAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1cf2beb683754f9488bbf2a6feaad3c6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Faculty Approval Approved">a9f0beb283754f9488bbf2a6feaad36d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:01:12</sys_created_on>
+        <sys_id>5b81363683754f9488bbf2a6feaad371</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:37:05</sys_updated_on>
+        <ui_id>c3ce0478-e7d4-487b-b295-739126dbbeef</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9lcprFCW8VNhVRUgjdVqpnWHTqaKLfQOWnMfYDoVB/PtcJw5koGqp1A0aVvi+fM7JPcnzlknBxqyPIoxG0ZD3ol6vG4bd6340H/bmUVf0ADFiHZZBilSpkeda0HkFqnSB7fZnIcCiiKOAl1pjZgMoCiU5WJlnux3VCmkKBZuZb6EIX0olqJaNn186rABN0y1qNt4epc6Fp2COikofG3zHeO2mcGeR8zIljLFsgne+c+IzV98mlKEmBycKOwzXFjOBBCQBZbDDUsiIca43bGx1SQGNIB4ytdlXLGVma6IprI38Qzf3Q1eXIDHjXoT9MfYC1eFkAhaeaDK3pd7rlUuOptZEYAKlsrftWF3wUDjN6xYLc9V056pMs/taEbYf0HoepSEQWDieDnlNK3la5q+PDcipzCpJPEWVc1D7E1ir5by0Ds6WocJK45QWQWaLuND5SlbNBCUNFooOQaLyV7rTyEUWAHe4A1IVginFJ1V4Blo6Et9pDDXvOsxszK0CYw5USMP4d+mQ1MQ8hbhSoZIgrjbBNXMtC3tDV63QA991vAHmg/c2jI8OC9WaeTDBOu6Gg1F/MIjpwaPO4tD/MUtZxC07nJrh5p/k53xxBurGFz+qbXibhbfGSeyu3Xt1Xye8MQZfZozrSzKGp3HxzvjID2H33Tdua5MqC5iWF4wFW5pfZRj2RAKc5Nw4BxBRFKfr/0H15/xwBurGD1OJSpg3aDRmwJRgWoxrWkeG8MmrmU/uvxZf5opoGFa/C/LGf/PRePkLNqUp1jcJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5b81363683754f9488bbf2a6feaad371"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a9f0beb283754f9488bbf2a6feaad36d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:58:51</sys_created_on>
+        <sys_id>3c01f2f283754f9488bbf2a6feaad34a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 14:58:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a9f0beb283754f9488bbf2a6feaad36d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:58:51</sys_created_on>
+        <sys_id>b001f2f283754f9488bbf2a6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 14:58:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a9f0beb283754f9488bbf2a6feaad36d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:58:51</sys_created_on>
+        <sys_id>cd01f2f283754f9488bbf2a6feaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 14:58:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a9f0beb283754f9488bbf2a6feaad36d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>faculty_approval_approved</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Faculty Approval Record","reference":"x_2059455_intern_0_faculty_approval","reference_display":"Faculty Approval","type":"reference","base_type":"reference","usedInstances":{"c3ce0478-e7d4-487b-b295-739126dbbeef":["record"],"bbdf26ba-30cd-47d8-9763-34523bc1fc79":["application","mentor","student_name"]},"attributes":{}},{"name":"Updated_1.current.application","label":"Trigger - Record Updated➛Faculty Approval Record➛Application","reference":"x_2059455_intern_0_internship_application","reference_display":"Internship Application","type":"reference","base_type":"reference","parent_table_name":"x_2059455_intern_0_faculty_approval","column_name":"application","usedInstances":{"c3ce0478-e7d4-487b-b295-739126dbbeef":["record"],"bbdf26ba-30cd-47d8-9763-34523bc1fc79":["application"]}},{"name":"Updated_1.current.faculty_name","label":"Trigger - Record Updated➛Faculty Approval Record➛Faculty Name","reference":"","reference_display":"Faculty Name","type":"string","base_type":"string","parent_table_name":"x_2059455_intern_0_faculty_approval","column_name":"faculty_name","usedInstances":{"bbdf26ba-30cd-47d8-9763-34523bc1fc79":["mentor"]}},{"name":"Updated_1.current.application.student","label":"Trigger - Record Updated➛Faculty Approval Record➛Application➛Student","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_2059455_intern_0_internship_application","column_name":"student","usedInstances":{"bbdf26ba-30cd-47d8-9763-34523bc1fc79":["student_name"]}}]</label_cache>
+        <master>true</master>
+        <name>Faculty Approval Approved</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Faculty Approval Approved">a9f0beb283754f9488bbf2a6feaad36d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b3777afe83754f9488bbf2a6feaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b3777afe83754f9488bbf2a6feaad310^sys_idNOT IN3f777afe83754f9488bbf2a6feaad31d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b3777afe83754f9488bbf2a6feaad310</id>
+        <name>Faculty Approval Approved</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>3f777afe83754f9488bbf2a6feaad31d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3f777afe83754f9488bbf2a6feaad31d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b3777afe83754f9488bbf2a6feaad310^sys_idNOT IN4c877afe83754f9488bbf2a6feaad330,88877afe83754f9488bbf2a6feaad33b,bb777afe83754f9488bbf2a6feaad31f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Faculty Approval Approved">b3777afe83754f9488bbf2a6feaad310</model>
+        <model_id>b3777afe83754f9488bbf2a6feaad310</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b3777afe83754f9488bbf2a6feaad310</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>4c877afe83754f9488bbf2a6feaad330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4c877afe83754f9488bbf2a6feaad330"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Faculty Approval Approved">b3777afe83754f9488bbf2a6feaad310</model>
+        <model_id>b3777afe83754f9488bbf2a6feaad310</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b3777afe83754f9488bbf2a6feaad310</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>88877afe83754f9488bbf2a6feaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=88877afe83754f9488bbf2a6feaad33b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Faculty Approval Approved">b3777afe83754f9488bbf2a6feaad310</model>
+        <model_id>b3777afe83754f9488bbf2a6feaad310</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b3777afe83754f9488bbf2a6feaad310</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>bb777afe83754f9488bbf2a6feaad31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bb777afe83754f9488bbf2a6feaad31f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b3777afe83754f9488bbf2a6feaad310^sys_idNOT IN04877afe83754f9488bbf2a6feaad352"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Faculty Approval Approved">b3777afe83754f9488bbf2a6feaad310</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>04877afe83754f9488bbf2a6feaad352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b3777afe83754f9488bbf2a6feaad310^sys_idNOT IN0c877afe83754f9488bbf2a6feaad34d,c4877afe83754f9488bbf2a6feaad34f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Faculty Approval Approved">b3777afe83754f9488bbf2a6feaad310</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>0c877afe83754f9488bbf2a6feaad34d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <ui_id>c3ce0478-e7d4-487b-b295-739126dbbeef</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9lcprFCW8VNhVRUgjdVqpnWHTqaKLfQOWnMfYDoVB/PtcJw5koGqp1A0aVvi+fM7JPcnzlknBxqyPIoxG0ZD3ol6vG4bd6340H/bmUVf0ADFiHZZBilSpkeda0HkFqnSB7fZnIcCiiKOAl1pjZgMoCiU5WJlnux3VCmkKBZuZb6EIX0olqJaNn186rABN0y1qNt4epc6Fp2COikofG3zHeO2mcGeR8zIljLFsgne+c+IzV98mlKEmBycKOwzXFjOBBCQBZbDDUsiIca43bGx1SQGNIB4ytdlXLGVma6IprI38Qzf3Q1eXIDHjXoT9MfYC1eFkAhaeaDK3pd7rlUuOptZEYAKlsrftWF3wUDjN6xYLc9V056pMs/taEbYf0HoepSEQWDieDnlNK3la5q+PDcipzCpJPEWVc1D7E1ir5by0Ds6WocJK45QWQWaLuND5SlbNBCUNFooOQaLyV7rTyEUWAHe4A1IVginFJ1V4Blo6Et9pDDXvOsxszK0CYw5USMP4d+mQ1MQ8hbhSoZIgrjbBNXMtC3tDV63QA991vAHmg/c2jI8OC9WaeTDBOu6Gg1F/MIjpwaPO4tD/MUtZxC07nJrh5p/k53xxBurGFz+qbXibhbfGSeyu3Xt1Xye8MQZfZozrSzKGp3HxzvjID2H33Tdua5MqC5iWF4wFW5pfZRj2RAKc5Nw4BxBRFKfr/0H15/xwBurGD1OJSpg3aDRmwJRgWoxrWkeG8MmrmU/uvxZf5opoGFa/C/LGf/PRePkLNqUp1jcJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0c877afe83754f9488bbf2a6feaad34d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Faculty Approval Approved">b3777afe83754f9488bbf2a6feaad310</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>c4877afe83754f9488bbf2a6feaad34f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <ui_id>bbdf26ba-30cd-47d8-9763-34523bc1fc79</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VVTW/bMAz9K4HOhmHHSdDmVrTIaW2BdculawVZohMBsuxJchovyH8fZSlp0DVYB+xS3/jxqPcoin7cESnInMxyyKaX+YwXeVGMs2x8McnLWVHmY1EwgAlJiGY1YKZjpQI6GAnZMNV555aOET6ZTqnUDoymGa1Bu8ZQZq1caW9gupC2VaxfRtTtkDK6Ok3ha6mEAU3mj08JaZnBg7Aime/ehD5KW7ESFKZ+87zPyHB9+67vyyl2dBcCjRGeT5YQ2DrQApBIxZSFhNRMC4aSejJ3pkOHASbuteqPGWvsDxYkPndr5S889iLzeRWgMg4hdjRp7FhwVzfMsQeszF1nYipfN5KDDT0RULFOuetTX0i4b51sdIAMMiO6UV2t70JLyLHA4YLQ01kkAa3X6ZlHGdXDunn5emC5kHpoSQyqhjN1tJhzRpad83x2BBT4i6Y1a1upV7Q1zUYOYORSpyuFRlqp5gUP9VORMu6Jp9hWli7QfzO4l8xIr+IWyyB4nxDb22uFw/aqBZtIf3aeSVAWNdDQBg/hRrbuCg/YQKS7Tw7vQUB2eXaw8vJ1kIYnYE/eAlJSkjNP+0eXZYXY7b63yB8EzVPeGWyZS0+S9vtn67qBmi/5IUwaEYgN7+w8qmIcb7Qfag9HMdfZkB7eJojnYP75QD+zlH9cJH+/78MiWUhQwr4zAIctAjX20AENA/Fmk8TgaBmDcZvk/2ub5LNs+D7RTgniPv1KOfl7nFkuT78B13iRkm4HAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c4877afe83754f9488bbf2a6feaad34f"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3777afe83754f9488bbf2a6feaad310</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>00877afe83754f9488bbf2a6feaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3777afe83754f9488bbf2a6feaad310</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>84877afe83754f9488bbf2a6feaad342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3777afe83754f9488bbf2a6feaad310</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:11</sys_created_on>
+        <sys_id>c0877afe83754f9488bbf2a6feaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b3777afe83754f9488bbf2a6feaad310"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>a9f0beb283754f9488bbf2a6feaad36d</sys_id>
+        <latest_snapshot>b3777afe83754f9488bbf2a6feaad310</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a9f0beb283754f9488bbf2a6feaad36d^sys_idNOT IN04877afe83754f9488bbf2a6feaad365"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"04877afe83754f9488bbf2a6feaad365","name":"plan","plan_signature":null}}</plan>
+        <plan_id>a9f0beb283754f9488bbf2a6feaad36d</plan_id>
+        <snapshot>09c9b63683b54f9488bbf2a6feaad3b0</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:27:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>04877afe83754f9488bbf2a6feaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:27:12</sys_updated_on>
+        <trigger display_value="">44877afe83754f9488bbf2a6feaad363</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a9f0beb283754f9488bbf2a6feaad36d"/>
+</record_update>

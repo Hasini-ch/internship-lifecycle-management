@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6ff86bbc83f18f5488bbf2a6feaad38f" label="Faculty Approval" max_length="40" name="x_2059455_intern_0_faculty_approval" type="collection">
+        <element label="Faculty Name" max_length="40" name="faculty_name" type="string"/>
+        <element choice="3" label="Approval Status" max_length="40" name="approval_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="1" value="rejected"/>
+                <element inactive_on_update="false" label="Approved" sequence="0" value="approved"/>
+                <element inactive_on_update="false" label="Pending" sequence="2" value="pending"/>
+            </choice>
+        </element>
+        <element label="Comments" max_length="200" name="comments" type="string"/>
+        <element label="Application" max_length="32" name="application" reference="x_2059455_intern_0_internship_application" type="reference"/>
+        <index name="index">
+            <element name="application"/>
+        </index>
+    </element>
+</database>

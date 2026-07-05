@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_trigger_template">
+    <sys_hub_trigger_template action="INSERT_OR_UPDATE">
+        <accessible_from>public</accessible_from>
+        <active>false</active>
+        <annotation/>
+        <attributes/>
+        <category display_value="Record">8886dd64c3d322002841b63b12d3aed4</category>
+        <comment/>
+        <description/>
+        <name>Internship Application Submitted</name>
+        <order>0</order>
+        <published_trigger_id/>
+        <source_trigger/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_trigger_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-03 01:38:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3c20be9e83b54b9488bbf2a6feaad3fc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Internship Application Submitted</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name>sys_hub_trigger_template_3c20be9e83b54b9488bbf2a6feaad3fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-03 01:39:48</sys_updated_on>
+        <template_properties/>
+        <trigger_category/>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_values>[{"name":"condition","label":"Condition","type":"conditions","displayValue":"","value":"","readOnly":false,"extendable":false},{"name":"table","label":"Table","type":"table_name","displayValue":"Internship Application","value":"x_2059455_intern_0_internship_application","readOnly":false,"extendable":false}]</trigger_values>
+        <type>record_create</type>
+    </sys_hub_trigger_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=3c20be9e83b54b9488bbf2a6feaad3fc"/>
+</record_update>

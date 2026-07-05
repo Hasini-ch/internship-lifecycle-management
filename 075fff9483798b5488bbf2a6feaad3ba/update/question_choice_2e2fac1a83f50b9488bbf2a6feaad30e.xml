@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="Department">fa8e28d683f50b9488bbf2a6feaad3e9</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-02 16:14:45</sys_created_on>
+        <sys_id>2e2fac1a83f50b9488bbf2a6feaad30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EEE</sys_name>
+        <sys_package display_value="Internship Lifecycle Management" source="x_2059455_intern_0">075fff9483798b5488bbf2a6feaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Internship Lifecycle Management">075fff9483798b5488bbf2a6feaad3ba</sys_scope>
+        <sys_update_name>question_choice_2e2fac1a83f50b9488bbf2a6feaad30e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 16:14:45</sys_updated_on>
+        <text>EEE</text>
+        <value>EEE</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=2e2fac1a83f50b9488bbf2a6feaad30e"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>2e2fac1a83f50b9488bbf2a6feaad30e</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-02 16:14:45</sys_created_on>
+        <sys_id>413fec1a83f50b9488bbf2a6feaad389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 16:14:45</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>2e2fac1a83f50b9488bbf2a6feaad30e</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-02 16:14:45</sys_created_on>
+        <sys_id>093fec1a83f50b9488bbf2a6feaad388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 16:14:45</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
