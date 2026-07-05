@@ -16,7 +16,7 @@ Managing internships manually leads to delays, poor communication, duplicate rec
 - Role-based access control
 - Service Catalog request
 - Automated workflows using Flow Designer
-- Reports and Dashboard
+- Reports
 
 ## Modules
 - Companies
